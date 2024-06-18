@@ -36,14 +36,11 @@ function getTotalNumberOfBorrows(account, books) {
  return totalBorrows;
 }
   
-//Declare a variable that will store the value of the final result in an empty array.
-//Declare a variable that will store the value of the matching borrow object.
-//Loop through the books array using the forEach method and loop through the borrows array using forEach
-//Declare a variable for just the borrows object const borrowed = item.borrows.
-//Destructure the book object.
-//As we loop through the borrowed array check if borrow.id is equal to accountId and borrow.returned == false.
-//If conditional is true push the book object into the result array and the borrows object to borrowsMatch array.
-//Filter through the authors array to return one author object whose id matches.
+//Declared a variable that will store the value of the final result in an empty array.
+//Looped thru the books array using forEach method and looped thru the borrowers using the same method
+//Destructured the book object
+//Then looped thru the borrawed array to check if borrow.id is equl to accountID and borrow.returned == false
+//Filtered thru the authors array to return one author object of which ever ID matched
 function getBooksPossessedByAccount(account, books, authors) {
  let result = [];
  let borrowMatch = [];
